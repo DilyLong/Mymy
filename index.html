@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神经表观修饰课题组</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 data-i18n="nav.brand">神经表观修饰课题组</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">首页</a></li>
+                <li><a href="#research" class="nav-link" data-i18n="nav.research">研究方向</a></li>
+                <li><a href="#members" class="nav-link" data-i18n="nav.members">团队成员</a></li>
+                <li><a href="#publications" class="nav-link" data-i18n="nav.publications">发表论文</a></li>
+                <li><a href="#news" class="nav-link" data-i18n="nav.news">新闻动态</a></li>
+                <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery">实验室</a></li>
+                <li><a href="#recruitment" class="nav-link" data-i18n="nav.recruitment">招生信息</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">联系方式</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="切换语言">
+                    <span>EN</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页/简介 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="home.title">神经表观修饰课题组</h1>
+            <p class="hero-subtitle" data-i18n="home.subtitle">探索神经系统的表观遗传调控机制</p>
+            <p class="hero-description" data-i18n="home.description">
+                我们致力于研究神经系统中表观遗传修饰的分子机制及其在神经发育、可塑性和疾病中的作用。
+                通过多学科交叉研究，我们旨在揭示表观遗传调控在神经功能中的关键作用，为神经系统疾病的
+                诊断和治疗提供新的理论基础和潜在靶点。
+            </p>
+            <a href="#research" class="btn btn-primary" data-i18n="home.learnMore">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="research.title">研究方向</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3 data-i18n="research.card1.title">DNA甲基化与神经发育</h3>
+                    <p data-i18n="research.card1.desc">研究DNA甲基化修饰在神经干细胞分化和神经元成熟过程中的动态变化及其功能机制。</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="research.card2.title">组蛋白修饰与神经可塑性</h3>
+                    <p data-i18n="research.card2.desc">探索组蛋白乙酰化、甲基化等修饰在突触可塑性和学习记忆中的调控作用。</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 data-i18n="research.card3.title">非编码RNA调控网络</h3>
+                    <p data-i18n="research.card3.desc">研究miRNA、lncRNA等非编码RNA在神经系统中与表观修饰的相互作用网络。</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 data-i18n="research.card4.title">神经疾病表观遗传学</h3>
+                    <p data-i18n="research.card4.desc">探索表观遗传异常在阿尔茨海默病、帕金森病等神经退行性疾病中的致病机制。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队成员 -->
+    <section id="members" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="members.title">团队成员</h2>
+            
+            <div class="member-category">
+                <h3 class="category-title" data-i18n="members.supervisor">导师</h3>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>张教授</h4>
+                        <p class="member-title" data-i18n="members.professor.title">教授、博士生导师</p>
+                        <p class="member-bio" data-i18n="members.professor.bio">主要从事神经表观遗传学研究，在DNA甲基化和组蛋白修饰领域有丰富的研究经验。</p>
+                        <div class="member-contact">
+                            <a href="mailto:zhang@example.edu"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-category">
+                <h3 class="category-title" data-i18n="members.phd">博士生</h3>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>李同学</h4>
+                        <p class="member-title" data-i18n="members.phdStudent">博士研究生</p>
+                        <p class="member-bio" data-i18n="members.phd1.bio">研究方向：DNA甲基化在神经发育中的作用机制</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>王同学</h4>
+                        <p class="member-title" data-i18n="members.phdStudent">博士研究生</p>
+                        <p class="member-bio" data-i18n="members.phd2.bio">研究方向：组蛋白修饰与神经可塑性</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>刘同学</h4>
+                        <p class="member-title" data-i18n="members.phdStudent">博士研究生</p>
+                        <p class="member-bio" data-i18n="members.phd3.bio">研究方向：非编码RNA在神经系统中的功能</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-category">
+                <h3 class="category-title" data-i18n="members.master">硕士生</h3>
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>陈同学</h4>
+                        <p class="member-title" data-i18n="members.masterStudent">硕士研究生</p>
+                        <p class="member-bio" data-i18n="members.master1.bio">研究方向：神经疾病的表观遗传机制</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>赵同学</h4>
+                        <p class="member-title" data-i18n="members.masterStudent">硕士研究生</p>
+                        <p class="member-bio" data-i18n="members.master2.bio">研究方向：表观修饰酶的功能研究</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4>孙同学</h4>
+                        <p class="member-title" data-i18n="members.masterStudent">硕士研究生</p>
+                        <p class="member-bio" data-i18n="members.master3.bio">研究方向：表观遗传与神经再生</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发表论文 -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="publications.title">发表论文</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-year">2024</div>
+                    <div class="publication-content">
+                        <h3 data-i18n="publications.pub1.title">DNA甲基化调控神经干细胞分化的分子机制</h3>
+                        <p class="publication-authors">张教授, 李同学, 王同学, et al.</p>
+                        <p class="publication-journal">Nature Neuroscience, 2024, 27(3): 245-258</p>
+                        <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="publications.viewDetails">查看详情</span></a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h3 data-i18n="publications.pub2.title">组蛋白乙酰化在突触可塑性中的作用</h3>
+                        <p class="publication-authors">张教授, 刘同学, 陈同学, et al.</p>
+                        <p class="publication-journal">Cell Reports, 2023, 42(8): 112345</p>
+                        <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="publications.viewDetails">查看详情</span></a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h3 data-i18n="publications.pub3.title">非编码RNA介导的表观遗传调控网络</h3>
+                        <p class="publication-authors">张教授, 王同学, 赵同学, et al.</p>
+                        <p class="publication-journal">Neuron, 2023, 111(5): 789-801</p>
+                        <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="publications.viewDetails">查看详情</span></a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-year">2022</div>
+                    <div class="publication-content">
+                        <h3 data-i18n="publications.pub4.title">表观遗传异常在阿尔茨海默病中的致病机制</h3>
+                        <p class="publication-authors">张教授, 李同学, 孙同学, et al.</p>
+                        <p class="publication-journal">Science Advances, 2022, 8(15): eabn1234</p>
+                        <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> <span data-i18n="publications.viewDetails">查看详情</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻动态 -->
+    <section id="news" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="news.title">新闻动态</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">03</span>
+                        <span class="date-year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-i18n="news.news1.title">课题组最新研究成果在Nature Neuroscience发表</h3>
+                        <p data-i18n="news.news1.content">我们关于DNA甲基化调控神经干细胞分化的研究取得了重要进展，相关成果已发表在Nature Neuroscience期刊上。</p>
+                        <a href="#" class="news-link"><span data-i18n="news.readMore">阅读更多</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">02</span>
+                        <span class="date-year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-i18n="news.news2.title">欢迎新同学加入课题组</h3>
+                        <p data-i18n="news.news2.content">本学期有三位新同学加入我们的研究团队，欢迎他们的到来，期待共同推进神经表观遗传学研究。</p>
+                        <a href="#" class="news-link"><span data-i18n="news.readMore">阅读更多</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">
+                        <span class="date-day">10</span>
+                        <span class="date-month">01</span>
+                        <span class="date-year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-i18n="news.news3.title">课题组参加国际神经科学大会</h3>
+                        <p data-i18n="news.news3.content">课题组多名成员参加了在旧金山举行的国际神经科学大会，并进行了墙报展示和口头报告。</p>
+                        <a href="#" class="news-link"><span data-i18n="news.readMore">阅读更多</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实验室照片/活动 -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery.title">实验室</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-i18n="gallery.item1">实验室环境</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-i18n="gallery.item2">实验设备</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-i18n="gallery.item3">组会讨论</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-i18n="gallery.item4">学术交流</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-i18n="gallery.item5">团队活动</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p data-i18n="gallery.item6">实验操作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 招生信息 -->
+    <section id="recruitment" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="recruitment.title">招生信息</h2>
+            <div class="recruitment-content">
+                <div class="recruitment-card">
+                    <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="recruitment.phd.title">博士研究生招生</span></h3>
+                    <div class="recruitment-details">
+                        <h4 data-i18n="recruitment.requirements">招生要求：</h4>
+                        <ul>
+                            <li data-i18n="recruitment.phd.req1">具有生物学、医学或相关专业的硕士学位</li>
+                            <li data-i18n="recruitment.phd.req2">对神经科学和表观遗传学研究有浓厚兴趣</li>
+                            <li data-i18n="recruitment.phd.req3">具备良好的英语读写能力</li>
+                            <li data-i18n="recruitment.phd.req4">有相关研究经验者优先</li>
+                        </ul>
+                        <h4 data-i18n="recruitment.directions">研究方向：</h4>
+                        <ul>
+                            <li data-i18n="recruitment.phd.dir1">神经表观遗传学机制研究</li>
+                            <li data-i18n="recruitment.phd.dir2">神经发育与可塑性</li>
+                            <li data-i18n="recruitment.phd.dir3">神经疾病表观遗传学</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recruitment-card">
+                    <h3><i class="fas fa-book"></i> <span data-i18n="recruitment.master.title">硕士研究生招生</span></h3>
+                    <div class="recruitment-details">
+                        <h4 data-i18n="recruitment.requirements">招生要求：</h4>
+                        <ul>
+                            <li data-i18n="recruitment.master.req1">具有生物学、医学或相关专业的本科学位</li>
+                            <li data-i18n="recruitment.master.req2">对科学研究有热情，具备良好的学习能力</li>
+                            <li data-i18n="recruitment.master.req3">英语水平良好</li>
+                            <li data-i18n="recruitment.master.req4">有实验室经验者优先</li>
+                        </ul>
+                        <h4 data-i18n="recruitment.training">培养方式：</h4>
+                        <ul>
+                            <li data-i18n="recruitment.master.train1">提供系统的科研训练和指导</li>
+                            <li data-i18n="recruitment.master.train2">支持参加国内外学术会议</li>
+                            <li data-i18n="recruitment.master.train3">提供良好的科研环境和设备支持</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="recruitment-contact">
+                <p data-i18n="recruitment.contactText">如有意向，欢迎通过以下方式联系我们：</p>
+                <a href="#contact" class="btn btn-primary" data-i18n="recruitment.contactBtn">查看联系方式</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.address">地址</h3>
+                            <p>XX大学 生命科学学院<br>XX省XX市XX区XX路XX号<br><span data-i18n="contact.postcode">邮编</span>：XXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.email">邮箱</h3>
+                            <p>zhang@example.edu<br>lab@example.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.phone">电话</h3>
+                            <p>+86-XXX-XXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.social">社交媒体</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3 data-i18n="contact.sendMessage">发送消息</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact.form.subject">主题</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">消息</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">发送</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 <span data-i18n="footer.brand">神经表观修饰课题组</span>. <span data-i18n="footer.rights">保留所有权利</span>.</p>
+            <p class="footer-links">
+                <a href="#home" data-i18n="nav.home">首页</a> |
+                <a href="#research" data-i18n="nav.research">研究方向</a> |
+                <a href="#members" data-i18n="nav.members">团队成员</a> |
+                <a href="#contact" data-i18n="nav.contact">联系方式</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
